@@ -54,22 +54,22 @@ This programming assignment measures the ability to analyze and implement the He
 ## Analyze the Algorithms
 
 ### **Heapify Algorithm**:
-- **Time Complexity**: (O(log n)) per call since the height of the heap is proportional to (log n).
+- **Time Complexity**: O(log n) per call since the height of the heap is proportional to (log n).
 
 ### **Build-Max-Heap Algorithm**:
-- **Time Complexity**: (O(n)), as the cost of heapifying nodes decreases for deeper levels (fewer nodes at higher depths).
+- **Time Complexity**: O(n), as the cost of heapifying nodes decreases for deeper levels (fewer nodes at higher depths).
 
 ### **Heap-Sort Algorithm**:
 - **Time Complexity**: 
-  - **Best Case**: (O(n log n)), as it involves building the heap and sorting.
-  - **Average Case**: (O(n log n)), due to the heapify operation applied (log n) times per element.
-  - **Worst Case**: (O(n log n)), when the heapify operation requires full reorganization of the heap.
+  - **Best Case**: O(n log n), as it involves building the heap and sorting.
+  - **Average Case**: O(n log n), due to the heapify operation applied (log n) times per element.
+  - **Worst Case**: O(n log n), when the heapify operation requires full reorganization of the heap.
 
-- **Space Complexity**: (O(1)), since it sorts in-place.
+- **Space Complexity**: O(1), since it sorts in-place.
 - **Stability**: Heap-Sort is **not stable**, as swapping nodes may disrupt the order of equal elements.
 
 ### **Advantages**:
-- Consistent worst-case time complexity of (O(n log n)).
+- Consistent worst-case time complexity of O(n log n).
 - Does not require extra memory.
 
 ### **Disadvantages**:
@@ -90,8 +90,4 @@ Original array:
 Sorted array:
 5 6 7 11 12 13
 ```
-
----
-
-This README provides a complete guide for understanding, analyzing, and implementing the Heap-Sort algorithm as part of the assignment.
 
