@@ -1,4 +1,4 @@
-# Heap-Sort Algorithm: Programming Assignment
+# Heap-Sort Algorithm: Algorithms Assignment
 
 This programming assignment measures the ability to analyze and implement the Heap-Sort algorithm.
 
