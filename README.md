@@ -1,11 +1,10 @@
-# Algorithms-Assignment
 # Heap-Sort Algorithm: Programming Assignment
 
 This programming assignment measures the ability to analyze and implement the Heap-Sort algorithm.
 
 ---
 
-## Part (a): Write All Required Algorithms for Heap-Sort
+## Required Algorithms for Heap-Sort
 
 ### Steps Involved in Heap-Sort:
 1. **Heapify Algorithm**:
@@ -52,108 +51,30 @@ This programming assignment measures the ability to analyze and implement the He
 
 ---
 
-## Part (b): Analyze the Algorithms
+## Analyze the Algorithms
 
 ### **Heapify Algorithm**:
-- **Time Complexity**: \(O(\log n)\) per call since the height of the heap is proportional to \(\log n\).
+- **Time Complexity**: (O(log n)) per call since the height of the heap is proportional to (log n).
 
 ### **Build-Max-Heap Algorithm**:
-- **Time Complexity**: \(O(n)\), as the cost of heapifying nodes decreases for deeper levels (fewer nodes at higher depths).
+- **Time Complexity**: (O(n)), as the cost of heapifying nodes decreases for deeper levels (fewer nodes at higher depths).
 
 ### **Heap-Sort Algorithm**:
 - **Time Complexity**: 
-  - **Best Case**: \(O(n \log n)\), as it involves building the heap and sorting.
-  - **Average Case**: \(O(n \log n)\), due to the heapify operation applied \(\log n\) times per element.
-  - **Worst Case**: \(O(n \log n)\), when the heapify operation requires full reorganization of the heap.
+  - **Best Case**: (O(n log n)), as it involves building the heap and sorting.
+  - **Average Case**: (O(n log n)), due to the heapify operation applied (log n) times per element.
+  - **Worst Case**: (O(n log n)), when the heapify operation requires full reorganization of the heap.
 
-- **Space Complexity**: \(O(1)\), since it sorts in-place.
+- **Space Complexity**: (O(1)), since it sorts in-place.
 - **Stability**: Heap-Sort is **not stable**, as swapping nodes may disrupt the order of equal elements.
 
 ### **Advantages**:
-- Consistent worst-case time complexity of \(O(n \log n)\).
+- Consistent worst-case time complexity of (O(n log n)).
 - Does not require extra memory.
 
 ### **Disadvantages**:
 - Slightly more complex to implement.
 - Cache locality is poor due to the non-sequential memory access.
-
----
-
-## Part (c): Implementation
-
-### C# Implementation:
-```csharp
-using System;
-
-class HeapSort
-{
-    static void Heapify(int[] arr, int n, int i)
-    {
-        int largest = i;
-        int left = 2 * i + 1;
-        int right = 2 * i + 2;
-
-        if (left < n && arr[left] > arr[largest])
-            largest = left;
-
-        if (right < n && arr[right] > arr[largest])
-            largest = right;
-
-        if (largest != i)
-        {
-            int temp = arr[i];
-            arr[i] = arr[largest];
-            arr[largest] = temp;
-
-            Heapify(arr, n, largest);
-        }
-    }
-
-    static void BuildMaxHeap(int[] arr)
-    {
-        int n = arr.Length;
-        for (int i = n / 2 - 1; i >= 0; i--)
-            Heapify(arr, n, i);
-    }
-
-    public static void HeapSortAlgorithm(int[] arr)
-    {
-        BuildMaxHeap(arr);
-        int n = arr.Length;
-        for (int i = n - 1; i >= 1; i--)
-        {
-            int temp = arr[0];
-            arr[0] = arr[i];
-            arr[i] = temp;
-
-            Heapify(arr, i, 0);
-        }
-    }
-
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Enter the numbers for the array (separated by spaces):");
-        string input = Console.ReadLine();
-        string[] inputArray = input.Split(' ');
-        int[] arr = Array.ConvertAll(inputArray, int.Parse);
-
-        Console.WriteLine("Original array:");
-        PrintArray(arr);
-
-        HeapSortAlgorithm(arr);
-
-        Console.WriteLine("Sorted array:");
-        PrintArray(arr);
-    }
-
-    static void PrintArray(int[] arr)
-    {
-        foreach (int num in arr)
-            Console.Write(num + " ");
-        Console.WriteLine();
-    }
-}
-```
 
 ### Example:
 Input:
