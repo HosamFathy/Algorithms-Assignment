@@ -1,0 +1,14 @@
+H:\UNI\Algorithm\Tasks\Heap Sort\Heap-Sort\Heap-Sort\bin\Debug\net8.0\Heap-Sort.exe
+H:\UNI\Algorithm\Tasks\Heap Sort\Heap-Sort\Heap-Sort\bin\Debug\net8.0\Heap-Sort.deps.json
+H:\UNI\Algorithm\Tasks\Heap Sort\Heap-Sort\Heap-Sort\bin\Debug\net8.0\Heap-Sort.runtimeconfig.json
+H:\UNI\Algorithm\Tasks\Heap Sort\Heap-Sort\Heap-Sort\bin\Debug\net8.0\Heap-Sort.dll
+H:\UNI\Algorithm\Tasks\Heap Sort\Heap-Sort\Heap-Sort\bin\Debug\net8.0\Heap-Sort.pdb
+H:\UNI\Algorithm\Tasks\Heap Sort\Heap-Sort\Heap-Sort\obj\Debug\net8.0\Heap-Sort.GeneratedMSBuildEditorConfig.editorconfig
+H:\UNI\Algorithm\Tasks\Heap Sort\Heap-Sort\Heap-Sort\obj\Debug\net8.0\Heap-Sort.AssemblyInfoInputs.cache
+H:\UNI\Algorithm\Tasks\Heap Sort\Heap-Sort\Heap-Sort\obj\Debug\net8.0\Heap-Sort.AssemblyInfo.cs
+H:\UNI\Algorithm\Tasks\Heap Sort\Heap-Sort\Heap-Sort\obj\Debug\net8.0\Heap-Sort.csproj.CoreCompileInputs.cache
+H:\UNI\Algorithm\Tasks\Heap Sort\Heap-Sort\Heap-Sort\obj\Debug\net8.0\Heap-Sort.dll
+H:\UNI\Algorithm\Tasks\Heap Sort\Heap-Sort\Heap-Sort\obj\Debug\net8.0\refint\Heap-Sort.dll
+H:\UNI\Algorithm\Tasks\Heap Sort\Heap-Sort\Heap-Sort\obj\Debug\net8.0\Heap-Sort.pdb
+H:\UNI\Algorithm\Tasks\Heap Sort\Heap-Sort\Heap-Sort\obj\Debug\net8.0\Heap-Sort.genruntimeconfig.cache
+H:\UNI\Algorithm\Tasks\Heap Sort\Heap-Sort\Heap-Sort\obj\Debug\net8.0\ref\Heap-Sort.dll
