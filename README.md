@@ -118,8 +118,8 @@ This programming assignment measures the ability to analyze and implement Kruska
 
 ### **Time Complexity:**
 1. **Sorting Edges:** O(E log E), where (E) is the number of edges.
-2. **Union-Find Operations:** O(E alpha(V)), where (alpha(V)) is the inverse Ackermann function.
-3. **Total Complexity:** O(E log E + E alpha(V) approx O(E log E) for most cases.
+2. **Union-Find Operations:** O(E alpha(V), where (alpha(V) is the inverse Ackermann function.
+3. **Total Complexity:** O(E log E + E alpha(V)) approx O(E log E) for most cases.
 
 ### **Space Complexity:**
 - Union-Find structure: O(V), where (V) is the number of vertices.
