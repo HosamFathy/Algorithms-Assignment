@@ -93,67 +93,66 @@ Sorted array:
 ---
 # Kruskal's Algorithm - Minimum Spanning Tree (MST)
 
-This programming assignment measures the ability to analyze and implement Kruskal’s algorithm to find the MST of a network.
+This programming assignment measures the ability to analyze and implement Kruskal’s Algorithm to find the Minimum Spanning Tree (MST) of a network.
 
 ---
 
-## Required Algorithms for Kruskal's Algorithm
+## Required Algorithms for Kruskal’s Algorithm
 
-1. **Kruskal's Algorithm Steps:**
-     - Sort all edges in ascending order of weight.
-     - Use the Union-Find (Disjoint Set) data structure to manage connected components and detect cycles.
-     - Select edges for the MST until ( V-1 ) edges are included, where ( V ) is the number of vertices.
-   - **Union-Find Data Structure:**
-     - Implements `Find` operation with path compression for efficiency.
-     - Implements `Union` operation with rank optimization.
+### Steps Involved in Kruskal's Algorithm:
+1. **Sort All Edges:**
+   - Sort all edges of the graph in non-decreasing order of their weights.
 
-2. **Analyze in detail your written algorithms:**
-   - **Time Complexity:**
-     - Sorting edges: O(E log E) , where ( E ) is the number of edges.
-     - Union-Find operations: O(alpha(V) , where ( alpha ) is the inverse Ackermann function (nearly constant for practical purposes).
-     - Total complexity: O(E log E + E alpha(V) approx O(E log E) for most cases.
-   - **Space Complexity:**
-     - Requires space for storing edges and the Union-Find data structure.
-   - **Advantages and Limitations:**
-     - Efficient for sparse graphs.
-     - Not optimal for dense graphs compared to other MST algorithms like Prim's algorithm.
+2. **Union-Find Data Structure:**
+   - **Find Operation:** Determines the root or representative of a set with path compression for optimization.
+   - **Union Operation:** Merges two sets based on rank to maintain efficiency.
+
+3. **Construct MST:**
+   - Initialize an empty MST.
+   - Iterate through the sorted edges and add each edge to the MST if it does not form a cycle.
+   - Use the Union-Find structure to check and avoid cycles.
 
 ---
 
-## Features
-- **Dynamic Input:** Users can define the graph structure by inputting the vertices and edges at runtime.
-- **Union-Find Optimization:** Utilizes the Union-Find data structure with path compression and union by rank for efficient cycle detection.
-- **Output:** Displays the edges in the MST and the total weight.
+## Analyze the Algorithms
+
+### **Time Complexity:**
+1. **Sorting Edges:** O(E log E), where (E) is the number of edges.
+2. **Union-Find Operations:** O(E alpha(V)), where (alpha(V)) is the inverse Ackermann function.
+3. **Total Complexity:** O(E log E + E alpha(V) approx O(E log E) for most cases.
+
+### **Space Complexity:**
+- Union-Find structure: O(V), where (V) is the number of vertices.
+- Edge list: O(E).
+
+### **Advantages:**
+- Efficient for sparse graphs.
+- Straightforward implementation using sorting and Union-Find.
+
+### **Limitations:**
+- Sorting step can be expensive for dense graphs.
 
 ---
 
-## Usage
+### Example:
 
-1. **Enter the number of vertices:**
-   - Specify the total number of vertices in the graph.
-
-2. **Input edges in the format:** `Source Destination Weight`
-   - Example: `0 1 10` represents an edge from vertex `0` to vertex `1` with a weight of `10`.
-
-3. **Type 'done' to finish adding edges.**
-
-### Sample Input
+Input:
 ```
-Enter the number of vertices: 4
+Enter the number of vertices:
+4
 Enter the edges in the format: Source Destination Weight
-Enter an edge (or type 'done' to finish): 0 1 10
-Enter an edge (or type 'done' to finish): 0 2 6
-Enter an edge (or type 'done' to finish): 0 3 5
-Enter an edge (or type 'done' to finish): 1 3 15
-Enter an edge (or type 'done' to finish): 2 3 4
-Enter an edge (or type 'done' to finish): done
+0 1 10
+0 2 6
+0 3 5
+1 3 15
+2 3 4
+done
 ```
-
-### Sample Output
+Output:
 ```
 Edges in the Minimum Spanning Tree:
-(0, 2) - Weight: 6
-(0, 3) - Weight: 5
 (2, 3) - Weight: 4
-Total Weight of the MST: 15
+(0, 3) - Weight: 5
+(0, 1) - Weight: 10
+Total Weight of the MST: 19
 ```
