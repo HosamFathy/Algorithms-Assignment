@@ -97,10 +97,9 @@ This programming assignment measures the ability to analyze and implement Kruska
 
 ---
 
-### Tasks:
+## Required Algorithms for Kruskal's Algorithm
 
-1. **Write all required algorithms needed to find MST using Kruskal’s Algorithm:**
-   - **Kruskal's Algorithm Steps:**
+1. **Kruskal's Algorithm Steps:**
      - Sort all edges in ascending order of weight.
      - Use the Union-Find (Disjoint Set) data structure to manage connected components and detect cycles.
      - Select edges for the MST until ( V-1 ) edges are included, where ( V ) is the number of vertices.
@@ -118,9 +117,6 @@ This programming assignment measures the ability to analyze and implement Kruska
    - **Advantages and Limitations:**
      - Efficient for sparse graphs.
      - Not optimal for dense graphs compared to other MST algorithms like Prim's algorithm.
-
-3. **Implement your written algorithms:**
-   - The implementation allows dynamic input from users to define vertices and edges.
 
 ---
 
