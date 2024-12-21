@@ -90,6 +90,7 @@ Original array:
 Sorted array:
 5 6 7 11 12 13
 ```
+---
 # Kruskal's Algorithm - Minimum Spanning Tree (MST)
 
 This programming assignment measures the ability to analyze and implement Kruskal’s algorithm to find the MST of a network.
